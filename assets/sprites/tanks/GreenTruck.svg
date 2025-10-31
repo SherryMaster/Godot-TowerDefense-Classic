@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="128px" height="128px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 6760 6760"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+    <clipPath id="id0">
+     <path d="M1560 1900l890 0c50,0 80,40 80,90l0 120 1690 0 0 -120c0,-50 40,-90 90,-90l880 0c50,0 90,40 90,90l0 250c0,40 -40,80 -90,80l90 0 0 2120 -90 0c50,0 90,30 90,80l0 250c0,50 -40,90 -90,90l-880 0c-50,0 -90,-40 -90,-90l0 -120 -1690 0 0 120c0,50 -30,90 -80,90l-890 0c-40,0 -80,-40 -80,-90l0 -250c0,-50 40,-80 80,-80l130 0 0 -2120 -130 0c-40,0 -80,-40 -80,-80l0 -250c0,-50 40,-90 80,-90z"/>
+    </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1386457446144">
+   <rect fill="none" width="6760" height="6760"/>
+   <path fill="#009933" d="M1560 1900l890 0c50,0 80,40 80,90l0 120 1690 0 0 -120c0,-50 40,-90 90,-90l880 0c50,0 90,40 90,90l0 250c0,40 -40,80 -90,80l90 0 0 2120 -90 0c50,0 90,30 90,80l0 250c0,50 -40,90 -90,90l-880 0c-50,0 -90,-40 -90,-90l0 -120 -1690 0 0 120c0,50 -30,90 -80,90l-890 0c-40,0 -80,-40 -80,-90l0 -250c0,-50 40,-80 80,-80l130 0 0 -2120 -130 0c-40,0 -80,-40 -80,-80l0 -250c0,-50 40,-90 80,-90z"/>
+   <g clip-path="url(#id0)">
+    <g>
+     <g>
+      <path id="_1" fill="black" d="M1560 1900l130 0 760 0c50,0 80,40 80,90l0 120 -840 0 0 210 -130 0c-40,0 -80,-40 -80,-80l0 -130 0 -120c0,-50 40,-90 80,-90z"/>
+      <path fill="black" d="M5190 1900l-120 0 -760 0c-50,0 -90,40 -90,90l0 120 850 0 0 210 120 0c50,0 90,-40 90,-80l0 -130 0 -120c0,-50 -40,-90 -90,-90z"/>
+      <path fill="black" d="M1560 4860l130 0 760 0c50,0 80,-40 80,-90l0 -120 -840 0 0 -210 -130 0c-40,0 -80,30 -80,80l0 130 0 120c0,50 40,90 80,90z"/>
+      <path fill="black" d="M5190 4860l-120 0 -760 0c-50,0 -90,-40 -90,-90l0 -120 850 0 0 -210 120 0c50,0 90,30 90,80l0 130 0 120c0,50 -40,90 -90,90z"/>
+     </g>
+     <g>
+      <polygon fill="black" fill-opacity="0.301961" points="5180,2530 5200,2530 5200,4220 5180,4220 "/>
+      <polygon fill="white" fill-opacity="0.301961" points="5220,2530 5200,2530 5200,4220 5220,4220 "/>
+      <polygon fill="black" fill-opacity="0.301961" points="5140,2530 5160,2530 5160,4220 5140,4220 "/>
+      <polygon fill="white" fill-opacity="0.301961" points="5180,2530 5160,2530 5160,4220 5180,4220 "/>
+      <polygon fill="black" fill-opacity="0.301961" points="5100,2530 5120,2530 5120,4220 5100,4220 "/>
+      <polygon fill="white" fill-opacity="0.301961" points="5140,2530 5120,2530 5120,4220 5140,4220 "/>
+      <polygon fill="black" fill-opacity="0.301961" points="5060,2530 5080,2530 5080,4220 5060,4220 "/>
+      <polygon fill="white" fill-opacity="0.301961" points="5100,2530 5080,2530 5080,4220 5100,4220 "/>
+     </g>
+     <polygon fill="black" fill-opacity="0.600000" stroke="black" stroke-width="110" stroke-miterlimit="2.61313" stroke-opacity="0.600000" points="2110,2220 4650,2220 4650,2320 2110,2320 "/>
+     <polygon fill="black" fill-opacity="0.600000" stroke="black" stroke-width="110" stroke-miterlimit="2.61313" stroke-opacity="0.600000" points="2110,4440 4650,4440 4650,4540 2110,4540 "/>
+     <polygon fill="black" fill-opacity="0.149020" stroke="black" stroke-width="110" stroke-miterlimit="2.61313" stroke-opacity="0.149020" points="5010,2110 5070,2110 5070,2320 5280,2320 5280,4440 5070,4440 5070,4650 5010,4650 "/>
+     <g>
+      <path fill="white" fill-opacity="0.450980" d="M3380 4220c470,0 840,-370 840,-840 0,-470 -370,-850 -840,-850 -470,0 -850,380 -850,850 0,470 380,840 850,840z"/>
+      <path fill="black" fill-opacity="0.450980" d="M3380 4110c400,0 730,-330 730,-730 0,-400 -330,-730 -730,-730 -400,0 -730,330 -730,730 0,400 330,730 730,730z"/>
+      <path fill="black" fill-opacity="0.450980" d="M3380 3490c60,0 110,-50 110,-110 0,-60 -50,-120 -110,-120 -60,0 -120,60 -120,120 0,60 60,110 120,110z"/>
+     </g>
+    </g>
+   </g>
+   <path fill="none" d="M1560 1900l890 0c50,0 80,40 80,90l0 120 1690 0 0 -120c0,-50 40,-90 90,-90l880 0c50,0 90,40 90,90l0 250c0,40 -40,80 -90,80l90 0 0 2120 -90 0c50,0 90,30 90,80l0 250c0,50 -40,90 -90,90l-880 0c-50,0 -90,-40 -90,-90l0 -120 -1690 0 0 120c0,50 -30,90 -80,90l-890 0c-40,0 -80,-40 -80,-90l0 -250c0,-50 40,-80 80,-80l130 0 0 -2120 -130 0c-40,0 -80,-40 -80,-80l0 -250c0,-50 40,-90 80,-90z"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b02jqorq8xrl5"]
+
+[ext_resource type="Texture2D" uid="uid://sl3p7aagmudc" path="res://assets/sprites/tanks/GreenTruck.svg" id="1_e1uyo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1uyo"]
+size = Vector2(72, 56)
+
+[node name="Tank" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_e1uyo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_e1uyo")
