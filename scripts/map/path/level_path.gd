@@ -2,6 +2,8 @@
 extends Path2D
 
 @export_tool_button("Make Path") var make_path_button: Callable = make_path
+@export var ease_offset := 30
+@export var point_offset := 56
 
 @onready var starting_position: Marker2D = $"Starting Position"
 @onready var road: TileMapLayer = $"../Map/Road"
@@ -88,9 +90,41 @@ func make_path_curve():
 	curve = null
 	var new_curve = Curve2D.new()
 	
-	for point in path_points:
+	for i in range(path_points.size()):
+		var point = path_points[i]
+		
 		var map_position_point:Vector2 = road.map_to_local(point)
-		new_curve.add_point(map_position_point)
+		
+		var atlas_point = road.get_cell_atlas_coords(point)
+		
+		
+		if point != path_points[0] and point != path_points[-1]: # make sure it's not the start and end point the rest are turns
+			var point_out: Vector2 = Vector2(0, -ease_offset) if atlas_point == road_turns_atlas_cords["top_right"] else Vector2(ease_offset, 0) if atlas_point == road_turns_atlas_cords["right_down"] else Vector2(0, ease_offset) if atlas_point == road_turns_atlas_cords["down_left"] else Vector2(-ease_offset, 0)
+			var point_in: Vector2 = Vector2(-ease_offset, 0) if atlas_point == road_turns_atlas_cords["top_right"] else Vector2(0, -ease_offset) if atlas_point == road_turns_atlas_cords["right_down"] else Vector2(ease_offset, 0) if atlas_point == road_turns_atlas_cords["down_left"] else Vector2(0, ease_offset)
+			
+			var position1_offset = Vector2(0, point_offset) if atlas_point == road_turns_atlas_cords["top_right"] else Vector2(-point_offset, 0) if atlas_point == road_turns_atlas_cords["right_down"] else Vector2(0, -point_offset) if atlas_point == road_turns_atlas_cords["down_left"] else Vector2(point_offset, 0)
+			var position2_offset = Vector2(point_offset, 0) if atlas_point == road_turns_atlas_cords["top_right"] else Vector2(0, point_offset) if atlas_point == road_turns_atlas_cords["right_down"] else Vector2(-point_offset, 0) if atlas_point == road_turns_atlas_cords["down_left"] else Vector2(0, -point_offset)
+			
+			var direction = "top" if point.y < path_points[i - 1].y and point.x == path_points[i-1].x \
+						else "down" if point.y > path_points[i - 1].y and point.x == path_points[i-1].x \
+						else "left" if point.y == path_points[i - 1].y and point.x < path_points[i-1].x \
+						else "right" if point.y == path_points[i - 1].y and point.x > path_points[i-1].x \
+						else "none"
+			
+			if direction == "top" and atlas_point == road_turns_atlas_cords["top_right"] or\
+				direction == "right" and atlas_point == road_turns_atlas_cords["right_down"] or\
+				direction == "down" and atlas_point == road_turns_atlas_cords["down_left"] or\
+				direction == "left" and atlas_point == road_turns_atlas_cords["left_top"]:
+					
+				new_curve.add_point(map_position_point + position1_offset, -point_out, point_out)
+				new_curve.add_point(map_position_point + position2_offset, point_in, -point_in)
+			
+			else:
+				new_curve.add_point(map_position_point + position2_offset, -point_in, point_in)
+				new_curve.add_point(map_position_point + position1_offset, point_out, -point_out)
+			
+		else:
+			new_curve.add_point(map_position_point)
 	
 	curve = new_curve
 	
