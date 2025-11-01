@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=7 format=3 uid="uid://c4pgxmh6obimi"]
+
+[ext_resource type="Script" uid="uid://2n81icle8oba" path="res://scripts/enemy_wave/level_data.gd" id="1_vtg3v"]
+[ext_resource type="Script" uid="uid://d315ct7ip0s8g" path="res://scripts/enemy_wave/wave_data.gd" id="2_0tupn"]
+[ext_resource type="Script" uid="uid://dfravdr0l8e8e" path="res://scripts/enemy_wave/wave_part.gd" id="3_fky2q"]
+[ext_resource type="PackedScene" uid="uid://b02jqorq8xrl5" path="res://scenes/entities/tank.tscn" id="4_t4vhk"]
+
+[sub_resource type="Resource" id="Resource_oemeb"]
+script = ExtResource("3_fky2q")
+unit = ExtResource("4_t4vhk")
+times = 5
+delay_in_spawns = 0.5
+metadata/_custom_type_script = "uid://dfravdr0l8e8e"
+
+[sub_resource type="Resource" id="Resource_6wkmp"]
+script = ExtResource("2_0tupn")
+parts = Array[ExtResource("3_fky2q")]([SubResource("Resource_oemeb")])
+metadata/_custom_type_script = "uid://d315ct7ip0s8g"
+
+[resource]
+script = ExtResource("1_vtg3v")
+waves = Array[ExtResource("2_0tupn")]([SubResource("Resource_6wkmp")])
+metadata/_custom_type_script = "uid://2n81icle8oba"

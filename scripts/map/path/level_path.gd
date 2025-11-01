@@ -1,5 +1,6 @@
 @tool
 extends Path2D
+class_name LevelPath
 
 @export_tool_button("Make Path") var make_path_button: Callable = make_path
 @export var ease_offset := 30

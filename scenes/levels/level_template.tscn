@@ -33,3 +33,5 @@ script = ExtResource("2_7hipx")
 
 [node name="Spawner" type="Node" parent="."]
 script = ExtResource("3_gr3xe")
+
+[node name="SpawnerCooldown" type="Timer" parent="."]
