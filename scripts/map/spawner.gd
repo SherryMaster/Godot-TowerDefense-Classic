@@ -18,9 +18,12 @@ func spawn_next_wave() -> void:
 		for i in range(part.times):
 			var path_follow_2d: PathFollow2D = PathFollow2D.new()
 			path_follow_2d.loop = false
+			path_follow_2d.v_offset = randf_range(10, -10)
 			level_path.add_child(path_follow_2d)
 			
-			var tank = tank_scene.instantiate()
+			var tank: BaseTank = tank_scene.instantiate()
+			tank.speed *= wave.speed_multi
+			tank.health *= wave.hp_multi
 			path_follow_2d.add_child(tank)
 			
 			spawner_cooldown.start(part.delay_in_spawns)
